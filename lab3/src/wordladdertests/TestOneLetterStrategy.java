@@ -45,6 +45,7 @@ public class TestOneLetterStrategy {
 			System.err.println(e);
 		}
 		System.setOut(ps);
+// anv. lambda-uttryck direkt här istället
 		Main.processRequests(wordfile, infile, (w1, w2) -> {
 			if(w1.length() != w2.length() || w1.equals(w2)) return false;
 			else {
